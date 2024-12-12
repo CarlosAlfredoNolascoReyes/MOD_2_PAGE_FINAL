@@ -1,0 +1,228 @@
+/* Restablecer márgenes en el body */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    background-color: #ffffff; /* Cambia el fondo a un gris claro */
+}
+
+/* Estilo del link */
+.HEAD_LINK {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo del ícono */
+.ICON_HEAD {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+/* Estilo del texto */
+.HEAD_STYLE {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    text-align: center; /* Centrado del texto */
+}
+
+/* Estilo de la barra de navegación */
+.HEAD {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #8becbc;
+    width: 100%;
+    padding: 0 50px;
+    /* Elimina position: fixed para que la barra se desplace con la página */
+}
+
+/* Estilo de los enlaces de la barra de navegación */
+.NAVBAR {
+    display: flex;
+    margin-right: 100px;
+    font-family: 'Pacifico', cursive;
+}
+.NAVAR_STYLE {
+    font-weight: bold; /* Hace el texto en negritas */
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    text-align: end; /* Centrado del texto */
+}
+.NAVBAR a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 80px; /* Espaciado entre los enlaces */
+}
+
+/* Estilo del ícono flotante */
+.ICON_FIXED {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #8becbc; /* Eliminar punto y coma extra */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+
+/* Estilo del ícono dentro del círculo */
+.ICON_BUTT {
+    width: 30px;  /* Tamaño del ícono */
+    height: 30px; /* Tamaño del ícono */
+}
+
+/* Estilo del encabezado */
+.CONTENT_HEADER {
+    font-family: 'Pacifico', cursive;
+    background-color: #8becbc;
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    min-height: 20px;
+}
+
+
+/* Estilo del contenedor del código */
+.CODE_CONTAINER {
+    position: relative;
+    border: 2px solid #ccc; /* Borde del contenedor */
+    border-radius: 10px;
+    background: #2e3440; /* Fondo oscuro */
+    padding: 1rem;
+    margin: 1rem 0;
+    overflow: auto; /* Permitir desplazamiento si es necesario */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo del bloque de código */
+.CODE_CONTAINER {
+    display: block;
+    width: 50%; /* Ajusta el ancho adaptativo */
+    max-width: 1000px; /* Ancho máximo */
+    max-height: 400px; /* Altura máxima */
+    overflow: auto; /* Permitir desplazamiento */
+    border: none; /* Elimina el borde */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    background: #2e374b; /* Fondo oscuro */
+    padding: 0; /* Ajusta padding */
+    margin: 2rem auto;
+}
+
+/* Estilo del botón de copiar */
+.COPY_BUTT {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #2e374b; /* Fondo del botón */
+    color: #a8badf; /* Color del texto */
+    border: none;
+    padding: 5px 5px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.COPY_BUTT:hover {
+    background: #88c0d0; /* Fondo al pasar el cursor */
+    color: #2e3440; /* Texto más oscuro */
+}
+
+.TEXT {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+    font-family: 'Pacifico', cursive;
+    color: #000000;
+    font-size: 18px;
+}
+
+.IMAGE_CONTAINER {
+    margin-top: 40px; /* Ajusta el espacio superior según el tamaño de tu barra */
+    text-align: center; /* Centra la imagen horizontalmente */
+}
+
+.CENTER_IMAGE {
+    display: block; /* Asegura que la imagen esté centrada en su contenedor */
+    margin: 0 auto; /* Centrado horizontal adicional si es necesario */
+}
+
+.MICROCONTROLER_CONTAINER {
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinea las tarjetas al centro */
+}
+
+.MICROCONTROLER_CARD {
+    background-color: #8becbc;
+    border-radius: 10px;
+    max-width: 300px;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: 2px solid #000000;
+}
+
+
+.MICROCONTROLER_CARD img {
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    height: auto; /* Mantén las proporciones */
+    object-fit: cover; /* Ajusta cómo se recorta la imagen */
+    object-position: center; /* Centra el contenido de la imagen */
+}
+
+.MICROCONTROLER_INFO {
+    padding: 15px;
+    text-align: justify; /* Justifica el texto */
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
+}
+
+.MICROCONTROLER_INFO h4 {
+    color: rgb(13, 7, 104);
+    text-align: center; /* Centra el título dentro del contenedor */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Barra inferior igual a la de navegación */
+.FOOTER {
+    background-color: #333;  /* Fondo oscuro */
+    color: white;  /* Texto blanco */
+    text-align: center;  /* Centra el texto */
+    padding: 15px 0;  /* Espaciado arriba y abajo */
+    position: relative;  /* Establece la posición relativa */
+    width: 100%;  /* Ocupa todo el ancho de la página */
+    font-size: 14px;  /* Tamaño del texto */
+    margin-top: 30px;  /* Espacio para separar del contenido */
+    box-sizing: border-box;  /* Asegura que el padding no afecte el tamaño */
+}
+
+.FOOTER p {
+    margin: 0;  /* Quita márgenes adicionales */
+}
+
