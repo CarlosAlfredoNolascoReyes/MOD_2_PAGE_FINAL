@@ -1,4 +1,4 @@
-# Proyecto final del curso de programacion Fronted de paginass web
+# Proyecto final del curso de programacion Fronted de páginas web
 
 ### Se abordan conceptos de HTML5, CSS y JS 
 
@@ -8,7 +8,7 @@
 > - Crea un repositorio (remoto) en tu cuenta de Github.
 > - Realiza la configuración necesaria para poder hacer público tu proyecto desde Github con la configuración de Github Pages.
 > - Comparte la liga de tu repositorio creado en Github así como la URL pública de tu proyecto.
-
+> - Por el momento la página no cuenta con diseño responsivo.
 
 #### Legales
 - Carlos Alfredo N. R.
